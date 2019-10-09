@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardList> when {dishes} 1`] = `
+<div
+  className="cardList"
+>
+  <div
+    className="card"
+  >
+    <img
+      alt="lorem ipsum 1"
+      className="image"
+      src="/image.png"
+    />
+    <div
+      className="info"
+    >
+      <p
+        className="title"
+      >
+        lorem ipsum 1
+      </p>
+      <p
+        className="price"
+      >
+        0.2 €
+      </p>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Añadir
+      </button>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <img
+      alt="lorem ipsum 2"
+      className="image"
+      src="/image.png"
+    />
+    <div
+      className="info"
+    >
+      <p
+        className="title"
+      >
+        lorem ipsum 2
+      </p>
+      <p
+        className="price"
+      >
+        0.3 €
+      </p>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Añadir
+      </button>
+    </div>
+  </div>
+</div>
+`;
