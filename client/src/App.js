@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { ProviderData } from './common/context/context';
-import { CardList } from './Components';
+import { CardList, Header } from './Components';
 import './App.css';
 
 const query = gql`
@@ -23,7 +23,10 @@ function App() {
             ({ data, loading }) => {
               if (loading) return 'loading...';
               return (
-                data && <CardList dishes={data.dishes} />
+                <Fragment>
+                  <Header />
+                  {data && <CardList dishes={data.dishes} />}
+                </Fragment>
               );
             }
           }
