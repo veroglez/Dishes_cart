@@ -8,6 +8,7 @@ class Card extends PureComponent {
   state = { modal: false };
 
   onModal = (value) => {
+    document.body.style.overflow = value ? 'hidden' : 'initial';
     this.setState({ modal: value });
   }
 
