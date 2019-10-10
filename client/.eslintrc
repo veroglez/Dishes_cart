@@ -12,6 +12,8 @@
   "rules": {
     "max-len": [1, 120, { "tabWidth": 2, "ignoreComments": true }],
     "react/jsx-filename-extension": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
     "import/no-cycle": "off",
     "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }]
   },
