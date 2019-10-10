@@ -4,6 +4,18 @@
   margin-right: 20px;
   margin-bottom: 20px;
 
+  .info {
+    padding: 20px;
+
+    .title {
+      margin-top: 0;
+    }
+
+    .price {
+      font-weight: 500;
+    }
+  }
+
   &:nth-child(3n) {
     margin-right: 0;
   }

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card> renders 1`] = `
+<div
+  className="card"
+>
+  <img
+    className="image"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    />
+    <p
+      className="price"
+    >
+      NaN €
+    </p>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Card> when {image} 1`] = `
+<div
+  className="card"
+>
+  <img
+    className="image"
+    src="/image.png"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    />
+    <p
+      className="price"
+    >
+      NaN €
+    </p>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Card> when {price} 1`] = `
+<div
+  className="card"
+>
+  <img
+    className="image"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    />
+    <p
+      className="price"
+    >
+      0.23 €
+    </p>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Card> when {title} 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Lorem ipsum"
+    className="image"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    >
+      Lorem ipsum
+    </p>
+    <p
+      className="price"
+    >
+      NaN €
+    </p>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
