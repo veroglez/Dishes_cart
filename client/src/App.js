@@ -3,7 +3,6 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { ProviderData } from './common/context/context';
 import { CardList, Header } from './Components';
-import './App.css';
 
 const query = gql`
   {
