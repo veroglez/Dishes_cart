@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal> render 1`] = `
+<div
+  className="modal"
+>
+  <div
+    className="content"
+  >
+    <img
+      alt=""
+      className="close"
+      onClick={[Function]}
+      src=""
+    />
+    <div
+      className="products"
+    />
+    <div
+      className="summary"
+    >
+      <p>
+        TOTAL
+      </p>
+      <p
+        className="price"
+      >
+        0 €
+      </p>
+      <button
+        disabled={true}
+        type="button"
+      >
+        Finalizar compra
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal> when {onClose} 1`] = `
+<div
+  className="modal"
+>
+  <div
+    className="content"
+  >
+    <img
+      alt=""
+      className="close"
+      onClick={[Function]}
+      src=""
+    />
+    <div
+      className="products"
+    />
+    <div
+      className="summary"
+    >
+      <p>
+        TOTAL
+      </p>
+      <p
+        className="price"
+      >
+        0 €
+      </p>
+      <button
+        disabled={true}
+        type="button"
+      >
+        Finalizar compra
+      </button>
+    </div>
+  </div>
+</div>
+`;
