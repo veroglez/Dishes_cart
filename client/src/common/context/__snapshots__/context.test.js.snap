@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Context> <ConsumerData> can get properties of context 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="0"
+    className="image"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    >
+      0
+    </p>
+    <p
+      className="price"
+    >
+      NaN
+       €
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Context> <ConsumerData> renders 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="test"
+    className="image"
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="title"
+    >
+      test
+    </p>
+    <p
+      className="price"
+    >
+      NaN
+       €
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Añadir
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Context> <Context> renders 1`] = `
+Array [
+  "products",
+  "items",
+  "total",
+  "onData",
+]
+`;
+
+exports[`<Context> <ProviderData> renders 1`] = `null`;

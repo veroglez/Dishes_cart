@@ -1,5 +1,6 @@
 import { node } from 'prop-types';
 import React, { createContext, Component } from 'react';
+import l10n from '../l10n';
 
 const Context = createContext();
 const { Provider, Consumer: ConsumerData } = Context;
@@ -14,6 +15,7 @@ class ProviderData extends Component {
   };
 
   state = {
+    l10n,
     products: [],
     items: 0,
     total: 0,
