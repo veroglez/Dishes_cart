@@ -1,41 +1,7 @@
 $breakpoint: (
-  xs: 320px,
   small: 600px,
-  medium: 840px,
-  large: 1024px,
-  xl: 1344px,
 );
 
-@mixin mobileLarge { // > 321
-  @media (min-width: #{map-get($breakpoint, xs)+1}) { @content; }
-}
 @mixin tablet { // > 601
   @media (min-width: #{map-get($breakpoint, small)+1}) { @content; }
 }
-@mixin tabletLarge {
-  @media (min-width: #{map-get($breakpoint, medium)}) { @content; }
-}
-@mixin desktop {
-  @media (min-width: #{map-get($breakpoint, large)}) { @content; }
-}
-@mixin desktopLarge {
-  @media (min-width: #{map-get($breakpoint, xl)}) { @content; }
-}
-
-// $color: (
-//   default: #4a4a4a,
-//   topaz: #10c0bc,
-//   secondary: #0e908d,
-//   bluegreen: #007a75,
-//   white: #ffffff,
-//   black: #000000,
-//   light: #f4f4f4,
-//   disabled: #cdd2d4,
-//   almostBlack: #707070,
-//   inside: #979797,
-// );
-
-// $font: (
-//   openSans: 'Open Sans',
-//   montserrat: 'Montserrat',
-// )

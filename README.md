@@ -42,3 +42,11 @@ If the snapshot has change, you should update your snapshot typing:
 ```
 yarn test -u
 ```
+
+## Solution
+
+Challenge cart has been implemented with React. In the side of the client, the code has been divided into components. Each of the components has its own structure and its own style, using CSSModules. There is a common style in `/common` for a breakpoint and a general style in `index.module.scss` with the basic style of the app. 
+
+Tests have been implemented, including snapshots and test for the used methods to check its functionality.
+
+The state of the application has been managed using `Context`, which contains a main `state` and a method `onData` in charge of updating this state.
