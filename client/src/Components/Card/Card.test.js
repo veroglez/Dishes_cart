@@ -4,7 +4,6 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Card from './Card';
 import { ProviderData } from '../../common/context/context';
-import l10n from '../../common/l10n';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -14,7 +13,7 @@ const PRICE = 23;
 const TITLE = 'Lorem ipsum';
 
 const providerData = shallow(<ProviderData />);
-const card = shallow(<Card l10n={l10n} />);
+const card = shallow(<Card price={PRICE} />);
 const { addProduct } = card.instance();
 const { onData } = providerData.instance();
 const total = 1000;
@@ -30,24 +29,19 @@ const products = [
 
 const HOC = inherit => (
   <ProviderData>
-    <Card {...DEFAULTS} {...inherit} />
+    <Card {...DEFAULTS} {...inherit} price={PRICE} />
   </ProviderData>
 );
 
 
 describe('<Card>', () => {
-  it('renders', () => {
+  it('render', () => {
     const tree = renderer.create(<HOC />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('when {title}', () => {
     const tree = renderer.create(<HOC title={TITLE} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('when {price}', () => {
-    const tree = renderer.create(<HOC price={PRICE} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

@@ -7,11 +7,3 @@ exports[`<Price> render 1`] = `
   0.1 €
 </p>
 `;
-
-exports[`<Price> render 2`] = `
-<p
-  className="price"
->
-  0.1 €
-</p>
-`;

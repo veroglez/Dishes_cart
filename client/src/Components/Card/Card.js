@@ -9,14 +9,13 @@ class Card extends PureComponent {
     image: string,
     index: number,
     title: string,
-    price: number,
+    price: number.isRequired,
   };
 
   static defaultProps = {
     image: undefined,
     index: undefined,
     title: undefined,
-    price: undefined,
   };
 
   addProduct = ({ products, total, onData }, index, title, image, price) => {

@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { ConsumerData, ProviderData } from './context';
-import { Card } from '../../Components';
+import { Price } from '../../Components';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -16,7 +16,7 @@ describe('<Context>', () => {
   it('<ConsumerData> renders', () => {
     const tree = renderer.create(
       <ConsumerData>
-        { () => <Card title="test" /> }
+        { () => <Price price={10} /> }
       </ConsumerData>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe('<Context>', () => {
     const tree = renderer.create(
       <ProviderData>
         <ConsumerData>
-          { ({ total }) => <Card title={total.toString()} /> }
+          { ({ total }) => <Price price={total} /> }
         </ConsumerData>
       </ProviderData>,
     ).toJSON();

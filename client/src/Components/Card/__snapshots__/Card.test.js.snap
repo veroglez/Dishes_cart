@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Card> renders 1`] = `
+exports[`<Card> render 1`] = `
 <div
   className="card"
 >
@@ -16,7 +16,7 @@ exports[`<Card> renders 1`] = `
     <p
       className="price"
     >
-      NaN €
+      0.23 €
     </p>
     <button
       onClick={[Function]}
@@ -35,34 +35,6 @@ exports[`<Card> when {image} 1`] = `
   <img
     className="image"
     src="/image.png"
-  />
-  <div
-    className="info"
-  >
-    <p
-      className="title"
-    />
-    <p
-      className="price"
-    >
-      NaN €
-    </p>
-    <button
-      onClick={[Function]}
-      type="button"
-    >
-      Añadir
-    </button>
-  </div>
-</div>
-`;
-
-exports[`<Card> when {price} 1`] = `
-<div
-  className="card"
->
-  <img
-    className="image"
   />
   <div
     className="info"
@@ -104,7 +76,7 @@ exports[`<Card> when {title} 1`] = `
     <p
       className="price"
     >
-      NaN €
+      0.23 €
     </p>
     <button
       onClick={[Function]}
