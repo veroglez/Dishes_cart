@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Price> render 1`] = `
+<p
+  className="price"
+>
+  0.1 €
+</p>
+`;
+
+exports[`<Price> render 2`] = `
+<p
+  className="price"
+>
+  0.1 €
+</p>
+`;
