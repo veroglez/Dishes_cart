@@ -1,8 +1,30 @@
+@import "../../common/style.scss";
+
 .card {
-  flex: 1 0 calc(33% - 20px);
+  flex: 1 0 calc(50% - 20px);
   border: 1px solid #eeeeee;
   margin-right: 20px;
   margin-bottom: 20px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  @include tablet {
+    flex: 1 0 calc(33% - 20px);
+
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
   .info {
     padding: 20px;
@@ -14,13 +36,5 @@
     .price {
       font-weight: 500;
     }
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .image {
-    width: 100%;
   }
 }

@@ -1,3 +1,5 @@
+@import "../../common/style.scss";
+
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -7,16 +9,26 @@
   height: 100vh;
 
   .content {
+    box-sizing: border-box;
     background-color: white;
-    width: 80%;
     padding: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     position: absolute;
     display: flex;
     justify-content: space-between;
-    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    @include tablet {
+      max-height: 600px;
+      width: 80%;
+      flex-direction: row;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
 
     .info {
       padding: 12px;
@@ -24,6 +36,10 @@
 
     .products {
       overflow: scroll;
+
+      @include tablet {
+        width: 70%;
+      }
     }
 
     .product {
@@ -44,9 +60,14 @@
     }
 
     .summary {
-      border-left: 1px solid #eeeeee;
-      padding: 20px;
+      padding: 20px 0;
       text-align: left;
+      
+      @include tablet {
+        border-left: 1px solid #eeeeee;
+        padding: 20px;
+        width: 30%;
+      }
 
       p {
         flex: 0 0 50%;

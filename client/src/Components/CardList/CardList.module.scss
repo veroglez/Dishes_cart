@@ -1,5 +1,11 @@
+@import "../../common/style.scss";
+
 .cardList {
-  margin: 90px 40px;
+  margin: 90px 20px;
   display: flex;
   flex-wrap: wrap;
+
+  @include tablet {
+    margin: 90px 40px;
+  }
 }
