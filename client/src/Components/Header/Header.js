@@ -4,7 +4,7 @@ import { Modal } from '..';
 import assets from '../../common/assets';
 import style from './Header.module.scss';
 
-class Card extends PureComponent {
+class Header extends PureComponent {
   state = { modal: false };
 
   onModal = (value) => {
@@ -12,9 +12,11 @@ class Card extends PureComponent {
     this.setState({ modal: value });
   }
 
+  onQuantity = products => products.reduce((acc, product) => acc + product.quantity, 0);
+
   render() {
     const {
-      onModal, state: { modal },
+      onModal, onQuantity, state: { modal },
     } = this;
 
     return (
@@ -27,7 +29,7 @@ class Card extends PureComponent {
               onClick={() => onModal(true)}
               src={assets.cart}
             />
-            <p className={style.number}>{products.length}</p>
+            <p className={style.number}>{products.length && onQuantity(products)}</p>
             {modal && (
               <Modal onClose={onModal} />
             )}
@@ -38,4 +40,4 @@ class Card extends PureComponent {
   }
 }
 
-export default Card;
+export default Header;

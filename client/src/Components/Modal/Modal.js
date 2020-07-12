@@ -5,7 +5,7 @@ import { ConsumerData } from '../../common/context/context';
 import assets from '../../common/assets';
 import style from './Modal.module.scss';
 
-class Card extends PureComponent {
+class Modal extends PureComponent {
   static propTypes = {
     onClose: func,
   };
@@ -24,8 +24,8 @@ class Card extends PureComponent {
             <div className={style.content}>
               <img className={style.close} src={assets.close} alt="" onClick={() => onClose(false)} />
               <div className={style.products}>
-                {products.map(product => (
-                  <div className={style.product}>
+                {products.map((product, index) => (
+                  <div className={style.product} key={index.toString()}>
                     <img src={product.image} alt={product.title} />
                     <div className={style.info}>
                       <p>{product.title}</p>
@@ -48,4 +48,4 @@ class Card extends PureComponent {
   }
 }
 
-export default Card;
+export default Modal;
